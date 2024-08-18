@@ -77,8 +77,10 @@ function main(config) {
             interval: 300,
         },
     ];
-
-    config["rule-providers"] = {
+    if (!config['rule-providers']) {
+        config['rule-providers'] = {};
+    }
+    config["rule-providers"] = Object.assign(config["rule-providers"], {
         private: {
             url: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml",
             path: "./ruleset/private.yaml",
@@ -191,7 +193,7 @@ function main(config) {
             format: "yaml",
             type: "http",
         },
-    };
+    });
 
     config["rules"] = [
         "RULE-SET,private,DIRECT",
@@ -210,5 +212,6 @@ function main(config) {
         "RULE-SET,cn_ip,DIRECT",
         "MATCH,PROXY",
     ];
+
     return config;
 }
