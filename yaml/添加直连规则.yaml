@@ -1,0 +1,5 @@
+# 添加直连规则示例
+
+rules:
+  - "DOMAIN-SUFFIX,baidu.com,DIRECT"
+  - "DOMAIN-SUFFIX,tencent.com,DIRECT"
