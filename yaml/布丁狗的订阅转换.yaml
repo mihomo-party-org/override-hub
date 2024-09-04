@@ -194,4 +194,9 @@ rules:
   - "RULE-SET,geolocation-!cn,PROXY"
   - "RULE-SET,cn_domain,DIRECT"
   - "RULE-SET,cn_ip,DIRECT"
+  - "DOMAIN-SUFFIX,edu.cn,DIRECT", // 🏫校园网直连
+  - "DOMAIN,cn.overleaf.com,DIRECT", // 国内Overleaf
+  - "DOMAIN-SUFFIX,deepl.com,DIRECT", // DeepL 翻译/改写
+  - "DOMAIN-SUFFIX,grammarly.com,DIRECT", // Grammarly
+  - "DOMAIN-SUFFIX,comet.com,DIRECT", // Comet
   - "MATCH,PROXY"
