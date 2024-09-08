@@ -21,6 +21,9 @@ function main(config) {
   }
 
   // 修改dns为fakeip
+  if (!config.dns) {
+    config.dns = {};
+  }
   const dnsConfig = config.dns;
   if (!dnsConfig['enhanced-mode'] || dnsConfig['enhanced-mode'] !== "fake-ip") {
     dnsConfig['enhanced-mode'] = "fake-ip";
