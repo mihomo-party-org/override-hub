@@ -173,6 +173,7 @@ proxy-groups:
     proxies:
       - PROXY
       - AUTO
+      - AIGC
       - Telegram
       - Google
       - HK AUTO
