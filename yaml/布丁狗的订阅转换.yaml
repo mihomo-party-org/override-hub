@@ -171,7 +171,11 @@ proxy-groups:
     include-all: true
     exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
     proxies:
+      - PROXY
       - AUTO
+      - AIGC
+      - Telegram
+      - Google
       - HK AUTO
       - SG AUTO
       - JP AUTO
