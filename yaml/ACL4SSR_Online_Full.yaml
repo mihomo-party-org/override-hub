@@ -17,7 +17,6 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     include-all: true
-    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 📲 电报消息
@@ -221,42 +220,36 @@ proxy-groups:
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
-    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇯🇵 日本节点
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
     type: url-test
-    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇺🇲 美国节点
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
-    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇨🇳 台湾节点
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
     type: url-test
-    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇸🇬 狮城节点
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
     type: url-test
-    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇰🇷 韩国节点
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
     type: url-test
-    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🎥 奈飞节点
