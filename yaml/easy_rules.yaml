@@ -1,0 +1,15 @@
++rules:
+  - RULE-SET,proxy_rules,GLOBAL
+  - RULE-SET,direct_rules,DIRECT
+
+rule-providers:
+  proxy_rules:
+    type: file
+    behavior: classical
+    format: text
+    path: rules/proxy_rule.yaml
+  direct_rules:
+    type: file
+    behavior: classical
+    format: text
+    path: rules/direct_rule.yaml
